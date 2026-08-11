@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>개인정보처리방침 — 청구 데스크 (Edge 확장) / Privacy Policy — Claim Desk</title>
+<meta name="description" content="청구 데스크 Edge 확장의 개인정보처리방침. Privacy policy for the Claim Desk browser extension.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff;
+    --fg: #1b1b1f;
+    --muted: #5c5f66;
+    --rule: #e3e4e8;
+    --accent: #1a4fa0;
+    --code-bg: #f4f5f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181c;
+      --fg: #e6e7ea;
+      --muted: #9ca1aa;
+      --rule: #2c2f36;
+      --accent: #8ab4f8;
+      --code-bg: #22252b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic",
+                 "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    line-height: 1.75;
+    font-size: 16px;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  h1 { font-size: 1.5rem; line-height: 1.35; margin: 0 0 .25rem; }
+  h2 { font-size: 1.1rem; margin: 2.5rem 0 .6rem; padding-top: 1.2rem; border-top: 1px solid var(--rule); }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  .eyebrow { color: var(--muted); font-size: .9rem; margin: 0 0 2rem; }
+  p, li { margin: .6rem 0; }
+  ul { padding-left: 1.2rem; }
+  a { color: var(--accent); }
+  code { background: var(--code-bg); padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .5rem .6rem; border-bottom: 1px solid var(--rule); }
+  th { white-space: nowrap; color: var(--muted); font-weight: 600; }
+  .wrap { overflow-x: auto; }
+  .lang-sep { margin: 4rem 0 0; border: 0; border-top: 3px double var(--rule); }
+  footer { margin-top: 3rem; color: var(--muted); font-size: .875rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>개인정보처리방침 — 청구 데스크 (Edge 확장)</h1>
+<p class="eyebrow">시행일 2026-08-11 · 확장 버전 0.2.0 · <a href="#en">English below</a></p>
+
+<p>「청구 데스크」(이하 “본 확장”)는 분당서울대병원 연구관리시스템(MSRI, <code>msri2.snubh.org</code>)에서
+연구비 지급신청의 영수증 기반 입력을 보조하는 개인용 도구입니다. 본 방침은 본 확장이 어떤 데이터를
+다루는지 사실대로 밝히기 위한 것입니다.</p>
+
+<h2>1. 개발자가 수집하는 정보 — 없음</h2>
+<p><strong>본 확장에는 개발자 서버가 존재하지 않습니다.</strong> 개발자는 이용자의 어떤 데이터도
+수집·수신·저장·판매하지 않으며, 분석 도구·광고·추적 코드를 포함하지 않습니다. 원격 코드를 내려받아
+실행하지 않고, 모든 코드는 설치 패키지에 동봉되어 있습니다.</p>
+
+<h2>2. 기기에만 저장되는 정보</h2>
+<p>아래 정보는 브라우저의 <code>chrome.storage.local</code>에 <strong>이용자 기기에만</strong> 저장되며
+외부로 전송되지 않습니다. 기기·프로필 간에 동기화되지 않습니다.</p>
+<div class="wrap">
+<table>
+  <tr><th>과제 정보</th><td>과제번호·과제명·유형 등 이용자가 등록하거나 화면에서 수집한 값</td></tr>
+  <tr><th>설정</th><td>Anthropic API 키, 모델 선택, 동작 옵션</td></tr>
+  <tr><th>참석자 프리셋</th><td>이용자가 저장한 회의 참석자 명단</td></tr>
+  <tr><th>처리 이력</th><td>본 확장으로 수행한 입력 작업의 기록</td></tr>
+</table>
+</div>
+<p>또한 작업 중 생성되는 화면 캡처와 로그가 이용자의 <strong>다운로드 폴더</strong>(<code>청구데스크/</code>)에
+저장됩니다. 이 파일들은 이용자의 컴퓨터에만 존재합니다.</p>
+
+<h2>3. 제3자에게 전송되는 정보 — 영수증 이미지(이용자가 실행할 때만)</h2>
+<p>본 확장의 영수증 판독 기능은 <strong>이용자가 해당 기능을 직접 실행한 경우에 한하여</strong>, 이용자가
+선택한 영수증 이미지를 Anthropic PBC의 API(<code>https://api.anthropic.com</code>)로 전송하여 금액·상호·일자를
+추출합니다. 이 전송에는 다음이 적용됩니다.</p>
+<ul>
+  <li>전송은 <strong>이용자 본인이 입력한 Anthropic API 키</strong>로 이루어지며, 청구 주체도 이용자 본인입니다.</li>
+  <li>전송 대상은 이용자가 선택한 영수증 파일과 추출 지시문뿐입니다. 계정 정보, MSRI 로그인 정보,
+      화면 캡처, 과제 정보는 전송하지 않습니다.</li>
+  <li>개발자는 이 통신을 중계하지 않으며 그 내용에 접근할 수 없습니다.</li>
+  <li>전송된 데이터의 처리는 Anthropic의 정책을 따릅니다:
+      <a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a></li>
+  <li><strong>판독 기능을 사용하지 않으면 본 확장은 어떤 외부 통신도 하지 않습니다.</strong> 영수증 이미지의
+      외부 전송을 원하지 않는 이용자는 이 기능을 쓰지 않고 값을 직접 입력할 수 있습니다.</li>
+</ul>
+<p>영수증에는 카드번호 일부 등 민감할 수 있는 정보가 포함될 수 있으므로, 소속 기관의 정보보호 정책을
+확인한 뒤 이 기능의 사용 여부를 판단하시기 바랍니다.</p>
+
+<h2>4. 로그인 정보</h2>
+<p>본 확장은 <strong>이용자의 아이디·비밀번호를 요구하거나, 입력하거나, 저장하지 않습니다.</strong> 이용자가
+브라우저에서 이미 로그인한 세션 위에서 동작할 뿐이며, 로그인 화면에 값을 입력하는 동작은 코드 차원에서
+차단되어 있습니다. 세션이 만료되면 작업을 중단하고 이용자에게 재로그인을 요청합니다.</p>
+
+<h2>5. 권한을 요청하는 이유</h2>
+<div class="wrap">
+<table>
+  <tr><th><code>debugger</code></th><td>MSRI 화면(SmartClient)에는 신뢰된 입력 이벤트에서만 반응하는 위젯이 있어
+      표준 DOM 조작으로는 입력이 불가능합니다. 이 권한은 아래 host_permissions로 한정된 탭에만 사용합니다.</td></tr>
+  <tr><th><code>msri2.snubh.org</code></th><td>입력을 수행할 대상 화면</td></tr>
+  <tr><th><code>api.anthropic.com</code></th><td>3항의 영수증 판독</td></tr>
+  <tr><th><code>storage</code></th><td>2항의 로컬 저장</td></tr>
+  <tr><th><code>scripting</code> · <code>sidePanel</code></th><td>사이드패널 UI와 화면 상태 확인</td></tr>
+  <tr><th><code>downloads</code></th><td>작업 기록·화면 캡처를 이용자의 다운로드 폴더에 저장</td></tr>
+</table>
+</div>
+
+<h2>6. 데이터 삭제</h2>
+<ul>
+  <li>로컬 저장 데이터: Edge에서 본 확장을 제거하면 함께 삭제됩니다. 패널의 설정에서 개별 삭제도 가능합니다.</li>
+  <li>다운로드 폴더의 기록·캡처: 이용자가 직접 삭제합니다.</li>
+  <li>개발자가 보관하는 데이터는 없으므로 개발자에게 삭제를 요청할 대상이 존재하지 않습니다.</li>
+</ul>
+
+<h2>7. 이용 대상</h2>
+<p>본 확장은 특정 기관의 내부 업무를 위한 도구이며 만 14세 미만 아동을 대상으로 하지 않습니다.</p>
+
+<h2>8. 변경 고지</h2>
+<p>본 방침이 변경되면 시행일과 함께 이 문서를 갱신하고, 변경이 데이터 처리 방식에 영향을 주는 경우
+확장 업데이트 시 안내합니다.</p>
+
+<h2>9. 문의</h2>
+<p><a href="mailto:hwangsi49@gmail.com">hwangsi49@gmail.com</a></p>
+
+<hr class="lang-sep" id="en">
+
+<h1>Privacy Policy — Claim Desk (Edge extension)</h1>
+<p class="eyebrow">Effective 2026-08-11 · Extension version 0.2.0</p>
+
+<p>Claim Desk (“the extension”) is a personal productivity tool that assists with receipt-based expense
+entry in a hospital-internal research administration system (MSRI, <code>msri2.snubh.org</code>).</p>
+
+<h2>1. Information collected by the developer — none</h2>
+<p><strong>There is no developer-operated server.</strong> The developer does not collect, receive, store,
+or sell any user data. The extension contains no analytics, advertising, or tracking code, and executes no
+remotely hosted code — all code ships inside the package.</p>
+
+<h2>2. Information stored on your device only</h2>
+<p>The following is stored in <code>chrome.storage.local</code> <strong>on your device only</strong> and is
+never transmitted. It does not sync across devices or profiles: project records (project number, name,
+type), settings (your Anthropic API key, model choice), saved meeting-attendee presets, and a history of
+entries made with the extension. Screenshots and logs produced during a run are saved to your
+<strong>Downloads</strong> folder (<code>청구데스크/</code>) and remain on your computer.</p>
+
+<h2>3. Information sent to a third party — receipt images, only when you invoke it</h2>
+<p>The optional receipt-reading feature sends the receipt image <strong>you select</strong> to the Anthropic
+API (<code>https://api.anthropic.com</code>) to extract the amount, merchant, and date — <strong>only when you
+invoke that feature</strong>. The request is made with <strong>your own Anthropic API key</strong> and is
+billed to you. Only the selected receipt file and the extraction prompt are sent; no credentials, no MSRI
+login data, no screenshots, and no project data. The developer does not proxy this request and cannot access
+its contents. Anthropic’s handling of the data is governed by
+<a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>.
+<strong>If you do not use this feature, the extension makes no outbound network requests at all</strong>; you
+can type the values in manually instead. Receipts may contain sensitive details such as partial card numbers,
+so please check your organization’s information-security policy before using it.</p>
+
+<h2>4. Credentials</h2>
+<p>The extension <strong>never requests, enters, or stores your username or password.</strong> It operates on
+top of a session you have already signed into, and filling login fields is blocked at the code level. If the
+session expires, the extension stops and asks you to sign in again.</p>
+
+<h2>5. Why each permission is requested</h2>
+<p><code>debugger</code> — the target application (SmartClient) contains widgets that respond only to trusted
+input events, so standard DOM manipulation cannot drive them; the permission is used only on tabs matching the
+host permissions below. <code>host_permissions: msri2.snubh.org</code> — the screen being automated.
+<code>host_permissions: api.anthropic.com</code> — the receipt reading in §3. <code>storage</code> — the local
+storage in §2. <code>scripting</code>, <code>sidePanel</code> — the side-panel UI and page-state checks.
+<code>downloads</code> — saving run records and screenshots to your Downloads folder.</p>
+
+<h2>6. Deleting your data</h2>
+<p>Removing the extension from Edge deletes its local storage; individual items can also be cleared from the
+panel’s settings. Files in your Downloads folder are deleted by you. The developer holds no data, so there is
+nothing to request deletion of.</p>
+
+<h2>7. Audience</h2>
+<p>The extension is a tool for internal work at a specific institution and is not directed to children under 14.</p>
+
+<h2>8. Changes</h2>
+<p>If this policy changes, this document is updated with a new effective date, and material changes to data
+handling are announced with the extension update.</p>
+
+<h2>9. Contact</h2>
+<p><a href="mailto:hwangsi49@gmail.com">hwangsi49@gmail.com</a></p>
+
+<footer>청구 데스크 · Claim Desk — 개인 도구입니다. 분당서울대학교병원의 공식 서비스가 아닙니다.<br>
+Claim Desk is a personal tool and is not an official service of Seoul National University Bundang Hospital.</footer>
+
+</main>
+</body>
+</html>
