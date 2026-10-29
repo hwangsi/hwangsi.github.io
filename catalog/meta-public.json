@@ -1,0 +1,236 @@
+[
+  {
+    "name": "dicom-viewer",
+    "description": null,
+    "homepage": null,
+    "fork": false,
+    "language": "Python",
+    "pushed_at": "2026-05-20T21:18:33Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "medsci-skills",
+    "description": "Claude Code skills for medical research — literature search, reporting guidelines, statistical analysis, publication figures. Built by a physician-researcher, tested on real publications. MIT licensed.",
+    "homepage": "https://aperivue.com/skills",
+    "fork": true,
+    "parent": "Aperivue/medsci-skills",
+    "language": null,
+    "pushed_at": "2026-04-24T15:49:39Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "korea",
+    "description": "Conflict: Korea Remake Project",
+    "homepage": null,
+    "fork": false,
+    "language": "TypeScript",
+    "pushed_at": "2026-10-17T04:57:43Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "ProstateMRICalculator",
+    "description": null,
+    "homepage": null,
+    "fork": false,
+    "language": "Kotlin",
+    "pushed_at": "2026-06-07T05:19:30Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "hwp-pipeline",
+    "description": null,
+    "homepage": null,
+    "fork": true,
+    "parent": "Yoojin-nam/hwp-pipeline",
+    "language": null,
+    "pushed_at": "2026-04-10T00:40:38Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "researcher-kg",
+    "description": "To explore the professors",
+    "homepage": null,
+    "fork": false,
+    "language": "HTML",
+    "pushed_at": "2026-07-16T02:44:52Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "CRO_lecture",
+    "description": null,
+    "homepage": null,
+    "fork": false,
+    "language": "JavaScript",
+    "pushed_at": "2026-07-12T00:09:02Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "hwangsi.github.io",
+    "description": null,
+    "homepage": null,
+    "fork": false,
+    "language": "HTML",
+    "pushed_at": "2026-09-28T04:37:30Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "email-agent",
+    "description": null,
+    "homepage": null,
+    "fork": false,
+    "language": "Python",
+    "pushed_at": "2026-07-13T09:50:04Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "hospital-agent",
+    "description": null,
+    "homepage": null,
+    "fork": false,
+    "language": "Python",
+    "pushed_at": "2026-07-26T05:18:54Z",
+    "default_branch": "master"
+  },
+  {
+    "name": "hwangsi",
+    "description": null,
+    "homepage": "https://hwangsi.vercel.app",
+    "fork": false,
+    "language": "TypeScript",
+    "pushed_at": "2026-08-09T21:38:32Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "kordoc",
+    "description": "모두 파싱해버리겠다 — HWP·HWPX·PDF·Office 문서를 Markdown으로. 양식 자동 채우기와 신구대조를 갖춘 CLI·MCP 서버 | Convert Korean documents (HWP, HWPX, PDF, Office) to Markdown — CLI and MCP server with form filling and diff",
+    "homepage": "https://www.npmjs.com/package/kordoc",
+    "fork": true,
+    "parent": "chrisryugj/kordoc",
+    "language": null,
+    "pushed_at": "2026-09-27T04:56:37Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "rhwp",
+    "description": "아래한글 hwp viewer and editor by rust and wasm",
+    "homepage": "",
+    "fork": true,
+    "parent": "edwardkim/rhwp",
+    "language": null,
+    "pushed_at": "2026-10-20T13:06:44Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "ksr_repeat_imaging",
+    "description": null,
+    "homepage": "https://ksr-repeat-imaging.vercel.app",
+    "fork": false,
+    "language": "HTML",
+    "pushed_at": "2026-07-24T09:39:35Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "harness_rev",
+    "description": "A meta-skill that designs domain-specific agent teams, defines specialized agents, and generates the skills they use.",
+    "homepage": "https://revfactory.github.io/harness/",
+    "fork": true,
+    "parent": "revfactory/harness",
+    "language": null,
+    "pushed_at": "2026-07-24T23:35:08Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "PACSFollowup",
+    "description": null,
+    "homepage": null,
+    "fork": false,
+    "language": "Kotlin",
+    "pushed_at": "2026-06-07T05:19:22Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "Abstract-searchme",
+    "description": null,
+    "homepage": "https://abstract-searcher.vercel.app",
+    "fork": false,
+    "language": "HTML",
+    "pushed_at": "2026-07-17T07:51:52Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "claude-cove-reference-verifier",
+    "description": "Claude Code skill for detecting reference hallucinations using Chain-of-Verification (CoVe)",
+    "homepage": null,
+    "fork": true,
+    "parent": "JeonKH81/claude-cove-reference-verifier",
+    "language": null,
+    "pushed_at": "2026-07-19T14:06:12Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "adrenalMRCalc",
+    "description": null,
+    "homepage": null,
+    "fork": false,
+    "language": "HTML",
+    "pushed_at": "2026-06-07T05:19:25Z",
+    "default_branch": "master"
+  },
+  {
+    "name": "PIRADSreport",
+    "description": "Prostate MRI Structured Report",
+    "homepage": "",
+    "fork": false,
+    "language": "HTML",
+    "pushed_at": "2026-07-12T10:14:40Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "KSRSapprover",
+    "description": null,
+    "homepage": null,
+    "fork": false,
+    "language": "Python",
+    "pushed_at": "2026-06-07T05:19:26Z",
+    "default_branch": "master"
+  },
+  {
+    "name": "ai-agents-for-beginners",
+    "description": "12 Lessons to Get Started Building AI Agents",
+    "homepage": "https://aka.ms/ai-agents-beginners",
+    "fork": true,
+    "parent": "microsoft/ai-agents-for-beginners",
+    "language": null,
+    "pushed_at": "2026-05-13T16:10:25Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "awesome-claude-design",
+    "description": "Awesome Claude Design: 68 ready-to-use design system inspirations in DESIGN.md format. Drop one in, scaffold a full UI in one shot.",
+    "homepage": "",
+    "fork": true,
+    "parent": "VoltAgent/awesome-claude-design",
+    "language": null,
+    "pushed_at": "2026-04-18T12:41:05Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "fame_outcome_followup",
+    "description": null,
+    "homepage": null,
+    "fork": false,
+    "language": "Python",
+    "pushed_at": "2026-08-18T04:31:06Z",
+    "default_branch": "main"
+  },
+  {
+    "name": "Docufinder",
+    "description": "Anything — 파일 이름이 아니라 본문으로 찾는 문서 검색기. HWP·PDF·Office 전문 검색을 오프라인으로. Windows·macOS | Offline content search across Korean documents (HWP, PDF, Office). Windows and macOS",
+    "homepage": null,
+    "fork": true,
+    "parent": "chrisryugj/Docufinder",
+    "language": null,
+    "pushed_at": "2026-08-14T00:47:19Z",
+    "default_branch": "main"
+  }
+]
