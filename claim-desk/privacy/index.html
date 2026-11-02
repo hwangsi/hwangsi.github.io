@@ -59,7 +59,7 @@
 
 <h1>개인정보처리방침 — 청구 데스크 (Edge 확장)</h1>
 
-<p class="eyebrow">시행일: 2026-09-28 · 확장 버전 0.6.11 (이전판: 2026-08-11 · 0.2.0) · <a href="#en">English below</a></p>
+<p class="eyebrow">시행일: 2026-11-02 · 확장 버전 0.6.12 (이전판: 2026-09-28 · 0.6.11, 2026-08-11 · 0.2.0) · <a href="#en">English below</a></p>
 
 <p>「청구 데스크」(이하 "본 확장")는 분당서울대병원 연구관리시스템(MSRI, <code>msri2.snubh.org</code>)에서 연구비 지급신청의 영수증 기반 입력을 보조하는 개인용 도구입니다. 본 방침은 본 확장이 어떤 데이터를 다루는지 사실대로 밝히기 위한 것입니다.</p>
 
@@ -134,6 +134,7 @@
   <tr><td><code>debugger</code></td><td>MSRI 화면(SmartClient)에는 신뢰된 입력 이벤트에서만 반응하는 위젯이 있어, 표준 DOM 조작으로는 입력이 불가능합니다. 입력 이벤트 전송, 증빙 파일 첨부(파일 선택 칸에 이용자가 고른 파일 지정), 확인 시점 화면 캡처, 화면 배율 확인에 쓰며, <code>msri2.snubh.org</code> 탭에만 작업 중에만 붙였다가 뗍니다. 네트워크 감청·기록에는 쓰지 않습니다.</td></tr>
   <tr><td><code>host_permissions: msri2.snubh.org</code></td><td>입력을 수행할 대상 화면</td></tr>
   <tr><td><code>host_permissions: api.anthropic.com</code></td><td>3-1항의 영수증 판독·회의내용 문안</td></tr>
+  <tr><td><code>host_permissions: file:///*</code></td><td>증빙 첨부. 이용자가 고른 영수증 파일을 MSRI 의 파일 선택 칸에 지정하려면 브라우저가 확장의 <strong>로컬 파일 접근</strong>을 요구합니다. 이 권한이 있어야 확장 세부 정보에 "파일 URL에 대한 액세스 허용" 스위치가 나타나며, 그 스위치는 이용자가 직접 켭니다(기본은 꺼짐). 본 확장은 이용자가 고른 파일과 본 확장이 다운로드 폴더에 저장한 그 사본만 첨부에 쓰며, 그 밖의 로컬 파일을 열거·읽기·전송하지 않습니다.</td></tr>
   <tr><td><code>optional_host_permissions: script.google.com</code>, <code>script.googleusercontent.com</code></td><td>3-2항의 로그 업로드. <strong>선택 권한</strong>이라 설치 시 요구하지 않고, 이용자가 [연결 시험]을 누를 때만 묻습니다.</td></tr>
   <tr><td><code>storage</code></td><td>2항의 로컬 저장</td></tr>
   <tr><td><code>scripting</code> · <code>sidePanel</code></td><td>사이드패널 UI 와 화면 상태 확인</td></tr>
@@ -159,6 +160,7 @@
 <p>본 방침이 변경되면 시행일과 함께 이 문서를 갱신하고, 변경이 데이터 처리 방식에 영향을 주는 경우 확장 업데이트 시 안내합니다.</p>
 
 <ul>
+  <li>2026-11-02 (0.6.12): 증빙 첨부에 필요한 로컬 파일 접근 권한(<code>file:///*</code>)과 그 쓰임을 밝힘. 외부 전송은 바뀌지 않음.</li>
   <li>2026-09-28 (0.6.11): 회의내용 문안 기능(3-1)과 선택 기능인 로그 업로드(3-2)를 밝히고, 로컬 저장 항목·권한 설명을 갱신.</li>
   <li>2026-08-11 (0.2.0): 최초 게시.</li>
 </ul>
@@ -171,7 +173,7 @@
 
 <h1>Privacy Policy — Claim Desk (Edge extension)</h1>
 
-<p class="eyebrow">Effective: 2026-09-28 · Extension version 0.6.11 (previous: 2026-08-11 · 0.2.0)</p>
+<p class="eyebrow">Effective: 2026-11-02 · Extension version 0.6.12 (previous: 2026-09-28 · 0.6.11, 2026-08-11 · 0.2.0)</p>
 
 <p>Claim Desk ("the extension") is a personal productivity tool that assists with receipt-based expense entry in a hospital-internal research administration system (MSRI, <code>msri2.snubh.org</code>).</p>
 
@@ -217,7 +219,7 @@
 
 <h2>5. Why each permission is requested</h2>
 
-<p><code>debugger</code> — the target application (SmartClient) contains widgets that respond only to trusted input events, so standard DOM manipulation cannot drive them. It is used to dispatch input events, attach the receipt file you selected to the upload field, capture confirmation screenshots, and read the page zoom; it is attached only to a <code>msri2.snubh.org</code> tab and only during a task, and is never used to inspect or log network traffic. <code>host_permissions: msri2.snubh.org</code> — the screen being automated. <code>host_permissions: api.anthropic.com</code> — §3.1. <code>optional_host_permissions: script.google.com</code>, <code>script.googleusercontent.com</code> — §3.2; <strong>optional</strong>, so it is not requested at install time but only when you press [Test connection]. <code>storage</code> — §2. <code>scripting</code>, <code>sidePanel</code> — the side-panel UI and page-state checks. <code>downloads</code> — saving run records and screenshots to your Downloads folder.</p>
+<p><code>debugger</code> — the target application (SmartClient) contains widgets that respond only to trusted input events, so standard DOM manipulation cannot drive them. It is used to dispatch input events, attach the receipt file you selected to the upload field, capture confirmation screenshots, and read the page zoom; it is attached only to a <code>msri2.snubh.org</code> tab and only during a task, and is never used to inspect or log network traffic. <code>host_permissions: msri2.snubh.org</code> — the screen being automated. <code>host_permissions: api.anthropic.com</code> — §3.1. <code>host_permissions: file:///*</code> — receipt attachment: to place the receipt file you selected into MSRI's upload field, the browser requires the extension to have <strong>local file access</strong>; this permission makes the "Allow access to file URLs" switch appear in the extension's details, and you turn that switch on yourself (it is off by default). The extension uses only the file you selected and the copy of it the extension saved to your Downloads folder; it does not list, read or transmit any other local file. <code>optional_host_permissions: script.google.com</code>, <code>script.googleusercontent.com</code> — §3.2; <strong>optional</strong>, so it is not requested at install time but only when you press [Test connection]. <code>storage</code> — §2. <code>scripting</code>, <code>sidePanel</code> — the side-panel UI and page-state checks. <code>downloads</code> — saving run records and screenshots to your Downloads folder.</p>
 
 <h2>6. Deleting your data</h2>
 
@@ -232,6 +234,7 @@
 <p>If this policy changes, this document is updated with a new effective date, and material changes to data handling are announced with the extension update.</p>
 
 <ul>
+  <li>2026-11-02 (0.6.12): disclosed the local file access permission (<code>file:///*</code>) used for receipt attachment. No change to what is sent off the device.</li>
   <li>2026-09-28 (0.6.11): disclosed meeting-minutes drafting (§3.1) and the optional log upload (§3.2); updated local storage items and permission descriptions.</li>
   <li>2026-08-11 (0.2.0): first published.</li>
 </ul>
